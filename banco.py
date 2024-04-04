@@ -35,7 +35,7 @@ while True:
     if saque > saldo:
       print(f"Saldo insuficiente, seu saldo é de R$ {saldo}")
     else:
-      if numero_saques == LIMITE_SAQUES:
+      if numero_saques >= LIMITE_SAQUES:
         print("Você atingiu o limite de saques diários")
       elif limite < saque:
         print("Você ultrapassou o seu limite por saque")
